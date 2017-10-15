@@ -1,10 +1,11 @@
 # Algorithms
 
+
 ***
 # Algorithms
 ## [1. Codidlity](https://codility.com/programmers/)
 ### Lesson 1 Iterations
-* **BinaryGap**
+* **[BinaryGap](https://github.com/Nbouchek/algorithms/wiki/Java-BinaryGap)**
 
 Find the longest sequence of zeros in a binary representation of an integer.
 
