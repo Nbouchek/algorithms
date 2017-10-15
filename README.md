@@ -1,8 +1,5 @@
 # Algorithms
 
-
-***
-# Algorithms
 ## [1. Codidlity](https://codility.com/programmers/)
 ### Lesson 1 Iterations
 * **[BinaryGap](https://github.com/Nbouchek/algorithms/wiki/Java-BinaryGap)**
