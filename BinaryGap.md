@@ -1,54 +1,50 @@
+## Main idea
+Use the rightmost bit
+## Java
 ```java
-public int solution(int number) {
-   int longestSequence = 0;
-   int count = -1;
-   int rightBit = 0;
+class BinaryGap {
+   public int solution(int number) {
+      int longestSequence = 0;
+      int count = -1;
+      int rightBit = 0;
 
-   while (number > 0) {
-      // get right most bit & shift right
-      rightBit = number & 1;
-      number = number >> 1;
+      while (number > 0) {
+         // get right most bit & shift right
+         rightBit = number & 1;
+         number = number >> 1;
 
-      if (0 == rightBit && count >= 0) {
-         count++;
+         if (0 == rightBit && count >= 0) {
+            count++;
+         }
+
+         if (1 == rightBit) {
+            longestSequence = count > longestSequence ? count : longestSequence;
+            count = 0;
+         }
       }
 
-      if (1 == rightBit) {
-         longestSequence = count > longestSequence ? count : longestSequence;
-	 count = 0;
-      }
+      return longestSequence;
    }
-
-   return longestSequence;
 }
-```
-```python
-public int solution(int number) {
-   int longestSequence = 0;
-   int count = -1;
-   int rightBit = 0;
 
-   while (number > 0) {
-      // get right most bit & shift right
-      rightBit = number & 1;
-      number = number >> 1;
-
-      if (0 == rightBit && count >= 0) {
-         count++;
-      }
-
-      if (1 == rightBit) {
-         longestSequence = count > longestSequence ? count : longestSequence;
-	 count = 0;
-      }
+public class BinaryGapDemo {
+   public static void main(String[] args) {
+      BinaryGap binaryGap = new BinaryGap();
+      Integer integer = 657642;
+      System.out.println("N = " + Integer.toBinaryString(integer) + ";\n Longest binaryGap = " + binaryGap.solution(integer));
    }
-
-   return longestSequence;
 }
 ```
 
-```python
+`
+N = 10100000100011101010;`<br/>`Longest binaryGap = 5`
 
+<a href="http://tpcg.io/b8qURQ" target="_blank">Here is a live Demo</a>
+
+
+## Python
+
+```python
 def solution(N):
     count = 0
     longest = 0
@@ -72,16 +68,16 @@ def solution(N):
 if __name__== "__main__":
     N = 657642
     print "N = " + "{0:b}".format(N) + "\nlongestGap = " + str(solution(N))
-```    
-    
-Output
+```
+### Output
+`
+N = 10100000100011101010` <br/>
+`longestGap = 5`
 
-N = 10100000100011101010 
-longestGap = 5
+<a href="http://tpcg.io/QxK4V1" target="_blank">Here is a live Demo</a>
 
-Here is a live Demo
+## Complexity
 
-Complexity
-
-Time	Space	Score
-O(log(n))	O(1)	100%
+   | Time                 | Space               | Score |
+   | -------------------- |:-------------------:| -----:|
+   | **O(log(n))**        | **O(1)**            | 100%  |
