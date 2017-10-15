@@ -2,7 +2,7 @@
 
 ## [1. Codidlity](https://codility.com/programmers/)
 ### Lesson 1 Iterations
-* **[BinaryGap](https://github.com/Nbouchek/algorithms/wiki/Java-BinaryGap)**
+* **[BinaryGap](https://github.com/Nbouchek/algorithms/wiki/BinaryGap)**
 
 Find the longest sequence of zeros in a binary representation of an integer.
 
