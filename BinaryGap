@@ -1,6 +1,7 @@
 ## Main idea
 Use the rightmost bit
 ## Java
+
 ```java
 class BinaryGap {
    public int solution(int number) {
