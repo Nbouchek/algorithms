@@ -88,8 +88,9 @@ public class BinaryGap {
 
 `
 N = 10100000100011101010;`<br/>`Longest binaryGap = 5`
+http://tpcg.io/0uFCK1 
 
-<a href="http://tpcg.io/b8qURQ" target="_blank">Here is a live Demo</a>
+<a href="http://tpcg.io/0uFCK1 " target="_blank">Here is a live Demo</a>
 
 
 ## Python
